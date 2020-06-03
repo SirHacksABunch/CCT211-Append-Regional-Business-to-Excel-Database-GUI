@@ -540,9 +540,9 @@ class RegionalBusinessDatabaseAppendEntry:
                                                      "No to edit or double check your inputs.")
             if confirmAddingEntry:
                 try:
-                    csvfile = open('regional_business_data_record.csv')
+                    csvfile = open('regional_business_database.csv')
                     csvfile.close()
-                    with open('regional_business_data_record.csv', mode='a', newline='') as csvfile:
+                    with open('regional_business_database.csv', mode='a', newline='') as csvfile:
                         RegionalBusinessDatabase = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
 
                         RegionalBusinessDatabase.writerow([self.lstFinalizedInputs[-16], self.lstFinalizedInputs[-15], self.lstFinalizedInputs[-14], \
@@ -552,7 +552,7 @@ class RegionalBusinessDatabaseAppendEntry:
                                                                self.lstFinalizedInputs[-4], self.lstFinalizedInputs[-3], self.lstFinalizedInputs[-2], \
                                                             self.lstFinalizedInputs[-1]])
                 except FileNotFoundError:
-                    with open('regional_business_data_record.csv', mode='a+', newline='') as csvfile:
+                    with open('regional_business_database.csv', mode='a+', newline='') as csvfile:
                         RegionalBusinessDatabase = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
                         RegionalBusinessDatabase.writerow(['CENT_X', 'CENT_Y', 'BusinessID', 'BusinessName', 'Street Number', 'Street Name', 'Unit Number', 'Postal Code', \
                                                                    'Location', 'Ward', 'NAICSSector', 'Employee Range', 'Phone', 'Fax', 'Email Address', 'URL'])
