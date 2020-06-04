@@ -1,7 +1,7 @@
 # CCT211 Assignment 1: Regional Business Database GUI
 
 # About:
-This application allows you to enter a business' information into the file-accessible Regional Business Database through a Graphical User Interface (GUI).
+This application allows you to enter a business' information into the file-accessible Regional Business Database through a Graphical User Interface (GUI), including accounting for user input validation.
 
 # Requirements:
 No version of Python is required to run the .exe file and the file is cross-compatible on any Operating System. The code was written using Python 3.7 and has tkinter implemented, therefore a Python version of at least 3.7 is required to view the .py file with proper compatibility.
